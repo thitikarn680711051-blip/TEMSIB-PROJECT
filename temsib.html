@@ -14,102 +14,101 @@
       --mala-red: #e84e40;}
 
     body {
-      font-family: 'Kanit', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;}
+  font-family: 'Kanit', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
 
-    .custom-header {
-      background: linear-gradient(90deg, #009966, #00ba7c);
-      padding: 1rem 0;}
+.custom-header {
+  background: linear-gradient(90deg, #009966, #00ba7c);
+  padding: 0.8rem 0;
+}
 
-    .nav-fb {
-      background-color: #fff;
-      color: var(--su-green) !important;
-      border-radius: 50px;
-      padding: 5px 18px !important;
-      font-weight: 600;
-      transition: 0.3s; }
+.carousel-item {
+  height: 380px;
+}
 
-    .nav-fb:hover {
-      background-color: #e9ecef;
-      transform: scale(1.05); }
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
 
-    .carousel-item {
-      height: 500px; }
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 230px;
+  }
+}
 
-    @media (max-width: 768px) {
-      .carousel-item { height: 300px; }
-    }
+.carousel-caption {
+  background: rgba(0,0,0,0.45);
+  padding: 15px;
+  border-radius: 15px;
+  right: 5%;
+  bottom: 10%;
+  left: auto;
+  max-width: 300px;
+}
 
-    .carousel-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.7);
-    }
+/* ========== รูปหลัก section แรก ========== */
+.custom-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+}
 
-    .carousel-caption {
-      background: rgba(0,0,0,0.4);
-      padding: 20px;
-      border-radius: 20px;
-      right: 5%;
-      bottom: 10%;
-      left: auto;
-      text-align: left;
-      max-width: 350px;
-      color: #fff;
-    }
+/* ========== CARD ========== */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
 
-    .card {
-      border: none;
-      border-radius: 15px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      background: #fff;
-    }
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-    }
+.card-img-top {
+  height: 170px;
+  object-fit: cover;
+}
 
-    .card-img-top {
-      height: 220px;
-      object-fit: cover;
-    }
+/* ========== TITLE ========== */
+.section-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
 
-    .section-title {
-      position: relative;
-      padding-bottom: 10px;
-      margin-bottom: 30px;
-    }
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #e84e40;
+}
 
-    .section-title::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 60px;
-      height: 3px;
-      background-color: var(--mala-red);
-    }
+/* ========== PRICE TAG ========== */
+.price-tag {
+  background: linear-gradient(45deg, #009966, #00ba7c);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
-    .price-tag {
-      background: linear-gradient(45deg, var(--su-green), #00ba7c);
-      color: white;
-      padding: 12px 30px;
-      border-radius: 50px;
-      display: inline-block;
-      font-size: 1.4rem;
-      font-weight: 600;
-      box-shadow: 0 4px 15px rgba(0, 153, 102, 0.3);
-    }
-
-    .custom-footer {
-      background: linear-gradient(90deg, #009966, #00ba7c);
-      color: white;
-    }
+.custom-footer {
+  background: linear-gradient(90deg, #009966, #00ba7c);
+  color: white;
+}
   </style>
 </head>
 
